@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from google import genai
 
 # Load environment variables
-env_path = Path(__file__).resolve().parent / ".env"
+env_path = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(dotenv_path=env_path, override=True)
 
 # Read Gemini API key
